@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({quiet: true}); // to avoid warning if .env file is missing
 export const ENV ={
     PORT: process.env.PORT,
     DB_URL: process.env.DB_URL,
